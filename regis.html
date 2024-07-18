@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./res.html" method="post">
+    <fieldset>
+    <legend>registration</legend>
+    <label for="firstname">firstname:</label>
+    <input type="text" id="firstname" name="firstname" pattern="[a-zA-Z]{5,10}" required placeholder="firstname" title="only alphabets within range 5-10"><br><br>
+    <label for="lastname">lastname:</label>
+    <input type="text" id="lastname" name="lastname" pattern="[a-zA-Z]+{2,8}" required placeholder="lastname" title="only alphabets within range 2-8"><br><br>
+    <label for="password">password:</label>
+    <input type="text" id="password" name="pass" pattern="[a-zA-Z/d!@#$%_]+{8, }" required placeholder="password" title="min len 8,small,capital,number,special"><br><br>
+    <label for="email">email:</label>
+    <input type="text" id="email" name="email" pattern="[a-z@_0-9]+" required placeholder="email" title="only small characters,@ and numbers"><br><br>
+    <input type="submit" value="submit">
+    <input type="reset" value="clear all" onclick="alert('clear all')">
+
+
+    </fieldset>
+    </form>
+</body>
+</html>
